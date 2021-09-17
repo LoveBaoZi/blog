@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Small_BaoZi</title>
+  
+  
+  <link href="atom.xml" rel="self"/>
+  
+  <link href="localhost:4000/blog/"/>
+  <updated>2021-09-15T03:52:54.510Z</updated>
+  <id>localhost:4000/blog/</id>
+  
+  <author>
+    <name>Small_BaoZi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>demo</title>
+    <link href="2021/09/14/demo/"/>
+    <id>2021/09/14/demo/</id>
+    <published>2021-09-14T05:47:10.000Z</published>
+    <updated>2021-09-15T03:52:54.510Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;WebSocket&quot;&gt;&lt;a href=&quot;#WebSocket&quot; class=&quot;headerlink&quot; title=&quot;WebSocket&quot;&gt;&lt;/a&gt;WebSocket&lt;/h2&gt;&lt;p&gt;###简介：&lt;/p&gt;
+&lt;h4 id=&quot;一、什么叫WebSocket&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="categories/技术/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
+    <link href="2018/12/12/Hexo-Theme-Sakura/"/>
+    <id>2018/12/12/Hexo-Theme-Sakura/</id>
+    <published>2018-12-12T14:16:01.000Z</published>
+    <updated>2020-03-16T10:41:30.000Z</updated>
+    
+    
+    <summary type="html">hexo-sakura主题使用教程</summary>
+    
+    
+    
+    <category term="技术" scheme="categories/技术/"/>
+    
+    
+    <category term="web" scheme="tags/web/"/>
+    
+    <category term="悦读" scheme="tags/悦读/"/>
+    
+  </entry>
+  
+</feed>

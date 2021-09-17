@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">demo | Small_BaoZi</title>
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="https://lovebaozi.github.io/blog//css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://lovebaozi.github.io/blog//css/lib.min.css" media="all">
+  <link rel="stylesheet" href="https://lovebaozi.github.io/blog//css/font.css" media="all">
+  <link rel="stylesheet" href="https://lovebaozi.github.io/blog//css/insight.css" media="all">
+  <link rel="stylesheet" href="https://lovebaozi.github.io/blog//css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="https://lovebaozi.github.io/blog//css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://lovebaozi.github.io/blog//css/sharejs.css">
+  <link rel="stylesheet" type="text/css" href="https://lovebaozi.github.io/blog//live2d/assets/waifu.min.css?v=1.4.2"/>
+
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "Small、BaoZi小屋を暖める";
+  mashiro_option.author_name = "小屋を暖める";
+  mashiro_option.site_url = "http://lovebaozi.github.io/blog/";
+  mashiro_option.v_appId = "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz";
+  mashiro_option.v_appKey = "mgOpfzbkHYqU92CV4IDlAUHQ";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="atom.xml" title="Small_BaoZi" type="application/atom+xml">
+</head>
+
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a target="_blank" rel="noopener" href="http://lovebaozi.github.io/blog/">
+          <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p>Live your life with passion! With some drive!</p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/honjun" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/github.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="sina">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/sina.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="wangyiyun">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wangyiyun.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="zhihu">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/zhihu.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="email">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/email.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li class="wechat">
+                  <a href="/#">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png">
+                  </a>
+                  <div class="wechatInner">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/wechat.jpg">
+                  </div>
+                </li>
+              
+            
+              
+                <li class="wechat">
+                  <a href="/#">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/social/wechat.png">
+                  </a>
+                  <div class="wechatInner">
+                    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/wechat.jpg">
+                  </div>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">Small、BaoZi</span>
+            <span class="shironeko">小屋を暖める</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/技术/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          技术
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/生活/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/资源/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/随想/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/转载/">
+                          <i class="fa fa-book" aria-hidden="true"></i>
+                          转载
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/tags/悦读/">
+                          <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                          书单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          番组
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/图集/">
+                          <i class="fa fa-photo" aria-hidden="true"></i>
+                          图集
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/lab/">
+                          <i class="fa fa-cogs" aria-hidden="true"></i>
+                          Lab
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/client/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-android faa-vertical" aria-hidden="true"></i>
+                    客户端
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="https://lovebaozi.github.io/blog//css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><！-- 套嵌目录使用（主要为了支援评论）-->
+        
+          <header class="entry-header">
+            <h1 class="entry-title">demo</h1>
+            <p class="entry-census">small_baozi&nbsp;·&nbsp;2021-9-14&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
+            <hr>
+          </header>
+        
+        <div class="entry-content">
+          <h2 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h2><p>###简介：</p>
+<h4 id="一、什么叫WebSocket"><a href="#一、什么叫WebSocket" class="headerlink" title="一、什么叫WebSocket"></a>一、什么叫WebSocket</h4><p><strong>WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。</strong></p>
+<p>   WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。</p>
+<p>在WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，</p>
+<p>并进行双向数据传输。</p>
+<h4 id="二、WebSocket到底可以用来干什么？"><a href="#二、WebSocket到底可以用来干什么？" class="headerlink" title="二、WebSocket到底可以用来干什么？"></a>二、WebSocket到底可以用来干什么？</h4><p>现在，很多网站为了实现推送技术，所用的技术都是 Ajax 轮询。轮询是在特定的的时间间隔（如每1秒），</p>
+<p>由浏览器对服务器发出HTTP请求，然后由服务器返回最新的数据给客户端的浏览器。这种传统的模式带来很明显</p>
+<p>的缺点，即浏览器需要不断的向服务器发出请求，然而HTTP请求可能包含较长的头部，其中真正有效的数据可能</p>
+<p>只是很小的一部分，显然这样会浪费很多的带宽等资源。</p>
+<p>HTML5 定义的 WebSocket 协议，能更好的节省服务器资源和带宽，并且能够更实时地进行通讯。</p>
+<p><img src="https://static.dabaozi.vip/Upload/Image/StudyData/a20b_1595935998.png" alt="websocket优点" title="websocket优点"></p>
+<h4 id="三、WebSocket-怎么用？"><a href="#三、WebSocket-怎么用？" class="headerlink" title="三、WebSocket 怎么用？"></a>三、WebSocket 怎么用？</h4><p>浏览器通过 JavaScript 向服务器发出建立 WebSocket 连接的请求，连接建立以后，客户端和服务器端就可</p>
+<p>以通过 TCP 连接直接交换数据。</p>
+<p>当你获取 Web Socket 连接后，你可以通过 send() 方法来向服务器发送数据，并通过 onmessage 事件来接</p>
+<p>收服务器返回的数据。</p>
+<p>以下 API 用于创建 WebSocket 对象。</p>
+<h4 id="四、代码实现"><a href="#四、代码实现" class="headerlink" title="四、代码实现"></a>四、代码实现</h4><h5 id="1-客户端代码实现"><a href="#1-客户端代码实现" class="headerlink" title="1.客户端代码实现"></a>1.客户端代码实现</h5><p>(1) 先带入需要的 **jquery-1.8.3.min.js **</p>
+<p>(2) 先判断当前浏览器是否支持</p>
+<pre><code> var websocket = null;
+ // 判断当前浏览器是否支持WebSocket
+ if (&#39;WebSocket&#39; in window) &#123;
+     websocket = new WebSocket(&quot;ws://ip:端口号/websocket/可以设置的参数&quot;);
+ &#125; else &#123;
+     alert(&#39;当前浏览器 Not support websocket&#39;)
+ &#125; 
+</code></pre>
+<p>(3) webSocket 是分为不同事件的，每一种事件都可以做出不同的操作</p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>事件处理程序</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>open</td>
+<td>Socket.onopen</td>
+<td>连接建立时触发</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Socket.onmessage</td>
+<td>客户端接收服务端数据时触发</td>
+</tr>
+<tr>
+<td>error</td>
+<td>Socket.onerror</td>
+<td>通信发生错误时触发</td>
+</tr>
+<tr>
+<td>close</td>
+<td>Socket.onclose</td>
+<td>连接关闭时触发</td>
+</tr>
+</tbody></table>
+<pre><code>
+ //连接成功建立的回调方法 在客户端可以 使用回调
+ websocket.onopen = function () &#123;
+ &#125;
+
+
+ //接收到消息的回调方法  可以将消息展示在当前页面上
+ websocket.onmessage = function (event) &#123;
+     setMessageInnerHTML(event.data);
+ &#125;
+
+//连接发生错误的回调方法
+ websocket.onerror = function () &#123;
+   setMessageInnerHTML(&quot;发生错误的时候，展示在页面上&quot;);
+ &#125;;
+
+
+ //连接关闭的回调方法
+ websocket.onclose = function () &#123;
+   setMessageInnerHTML(&quot;退出了聊天室&quot;);
+&#125;
+
+//将消息显示在网页上
+function setMessageInnerHTML(innerHTML) &#123;
+   document.getElementById(&#39;message&#39;).innerHTML += innerHTML;
+&#125;
+</code></pre>
+<p>(4) JS页面 发送消息的时候，点击发送按钮，请求 SEND 方法</p>
+<pre><code>//  按钮的点击触发事件 之后 发送消息
+
+&lt;input id=&quot;text&quot; type=&quot;text&quot;/&gt;
+
+&lt;input id=&quot;name&quot;/&gt;
+
+&lt;button onclick=&quot;send()&quot;&gt;发送消息&lt;/button&gt;
+
+function send() &#123;
+        var message = document.getElementById(&#39;text&#39;).value;
+        var userName = $(&quot;#name&quot;).val();
+        var dataString = &#123;
+            message: message,
+            userName: userName,
+            type: 1
+        &#125;;
+        // 这里 SEND 方法之后  服务器那边就会接受到 参数 
+        websocket.send(JSON.stringify(dataString));
+    &#125;
+</code></pre>
+<p>(5) 关闭Socket链接 </p>
+<pre><code> //** ① 主动关闭WebSocket连接**
+
+&lt;button onclick=&quot;closeWebSocket()&quot;&gt;关闭WebSocket连接&lt;/button&gt;
+
+function closeWebSocket() &#123;
+        var userName = $(&quot;#name&quot;).val();
+        var dataString = &#123;
+            userName: userName,
+            message: &quot;退出了聊天室&quot;,
+            type: 4
+        &#125;;
+        websocket.send(JSON.stringify(dataString));
+        // 主动 socket 主动关闭
+        websocket.close();
+   &#125;
+</code></pre>
+<pre><code>// ② 监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接。
+// 防止连接还没断开就关闭窗口，server端会抛异常。
+window.onbeforeunload = function () &#123;
+    closeWebSocket();
+&#125;
+</code></pre>
+<p>完整代码</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;WebSocket实现页面&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Welcome
+&lt;br/&gt;&lt;input id=&quot;text&quot; type=&quot;text&quot;/&gt;
+&lt;button onclick=&quot;send()&quot;&gt;发送消息&lt;/button&gt;
+&lt;hr/&gt;
+&lt;button onclick=&quot;closeWebSocket()&quot;&gt;关闭WebSocket连接&lt;/button&gt;
+&lt;hr/&gt;
+当前聊天用户名：&lt;input id=&quot;name&quot;/&gt; 可修改
+&lt;br/&gt;
+&lt;br/&gt;
+消息记录区：
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;div id=&quot;message&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script src=&quot;js/jquery-1.8.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var websocket = null;
+    //判断当前浏览器是否支持WebSocket
+    if (&#39;WebSocket&#39; in window) &#123;
+        websocket = new WebSocket(&quot;ws://localhost:8081/websocket/nihao&quot;);
+    &#125; else &#123;
+        alert(&#39;当前浏览器 Not support websocket&#39;)
+    &#125;
+
+    //连接发生错误的回调方法
+    websocket.onerror = function () &#123;
+        setMessageInnerHTML(&quot;&#123;\&quot;code\&quot;:\&quot;200\&quot;,\&quot;message\&quot;:\&quot;发生错误\&quot;,\&quot;user\&quot;:\&quot;\&quot;&#125;&quot;);
+    &#125;;
+
+    //连接成功建立的回调方法
+    websocket.onopen = function () &#123;
+    &#125;
+
+    //接收到消息的回调方法
+    websocket.onmessage = function (event) &#123;
+        setMessageInnerHTML(event.data);
+    &#125;
+
+    //连接关闭的回调方法
+    websocket.onclose = function () &#123;
+        var userName = $(&quot;#name&quot;).val();
+        setMessageInnerHTML(&quot;&#123;\&quot;code\&quot;:\&quot;200\&quot;,\&quot;userName\&quot;:\&quot;&quot; + userName + &quot;\&quot;,\&quot;message\&quot;:\&quot;退出了聊天室\&quot;,\&quot;type\&quot;:\&quot;3\&quot;&#125;&quot;);
+    &#125;
+
+    //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+    window.onbeforeunload = function () &#123;
+        closeWebSocket();
+    &#125;
+
+    //将消息显示在网页上
+    function setMessageInnerHTML(innerHTML) &#123;
+        var jsonObject = eval(&#39;(&#39; + innerHTML + &#39;)&#39;);
+        if (jsonObject[&quot;type&quot;] == 1) &#123;
+            document.getElementById(&#39;message&#39;).innerHTML += jsonObject[&quot;userName&quot;] + &quot;     发送了:   &quot; + jsonObject[&quot;message&quot;] + &#39;&lt;br/&gt;&#39;;
+            // + &quot;&lt;img src=&#39;&quot;+jsonObject[&quot;images&quot;]+&quot;&#39; /&gt;&quot;
+        &#125; else if (jsonObject[&quot;type&quot;] == 2) &#123;
+            $(&quot;#name&quot;).val(jsonObject[&quot;userName&quot;]);
+            document.getElementById(&#39;message&#39;).innerHTML += jsonObject[&quot;userName&quot;] + &quot;  &quot; + jsonObject[&quot;message&quot;] + &#39;&lt;br/&gt;&#39;;
+        &#125; else if (jsonObject[&quot;type&quot;] == 3 || jsonObject[&quot;type&quot;] == 4) &#123;
+            document.getElementById(&#39;message&#39;).innerHTML += jsonObject[&quot;userName&quot;] + jsonObject[&quot;message&quot;] + &#39;&lt;br/&gt;&#39;;
+        &#125;
+    &#125;
+
+    //关闭WebSocket连接
+    function closeWebSocket() &#123;
+        var userName = $(&quot;#name&quot;).val();
+        var dataString = &#123;
+            userName: userName,
+            message: &quot;退出了聊天室&quot;,
+            type: 4
+        &#125;;
+        websocket.send(JSON.stringify(dataString));
+        websocket.close();
+    &#125;
+
+    //发送消息
+    function send() &#123;
+        var message = document.getElementById(&#39;text&#39;).value;
+        var userName = $(&quot;#name&quot;).val();
+
+        var dataString = &#123;
+            message: message,
+            userName: userName,
+            type: 1
+        &#125;;
+        websocket.send(JSON.stringify(dataString));
+    &#125;
+&lt;/script&gt;
+
+</code></pre>
+<h5 id="2-服务端代码实现"><a href="#2-服务端代码实现" class="headerlink" title="2.服务端代码实现"></a>2.服务端代码实现</h5><p>(1) maven 配置</p>
+<pre><code>        &lt;dependency&gt;
+            &lt;groupId&gt;javax.websocket&lt;/groupId&gt;
+            &lt;artifactId&gt;javax.websocket-api&lt;/artifactId&gt;
+            &lt;version&gt;1.1&lt;/version&gt;
+            &lt;scope&gt;provided&lt;/scope&gt;
+        &lt;/dependency&gt;
+</code></pre>
+<p>(2) 类注解</p>
+<pre><code>/**
+ * @ServerEndpoint 注解是一个类层次的注解，它的功能主要是将目前的类定义成一个websocket服务器端,
+ * 注解的值将被用于监听用户连接的终端访问URL地址,客户端可以通过这个URL来连接到WebSocket服务器端
+ */
+@ServerEndpoint(&quot;/websocket/&#123;roomId&#125;&quot;)
+
+// 如果 是Spring 集成webSocket 的话 ，这个类必须要交给 Spring 容器管理，
+// 所以必须要加上这个注解
+@Component
+</code></pre>
+<p>(3)代码实现</p>
+<pre><code> 
+import com.alibaba.fastjson.JSONObject;
+import com.student.utils.price.PriceUtil;
+import com.student.websocket.dto.MessageDto;
+import org.apache.commons.collections.MapUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import javax.websocket.*;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArraySet;
+
+/**
+ * @ServerEndpoint 注解是一个类层次的注解，它的功能主要是将目前的类定义成一个websocket服务器端,
+ * 注解的值将被用于监听用户连接的终端访问URL地址,客户端可以通过这个URL来连接到WebSocket服务器端
+ */
+@ServerEndpoint(&quot;/websocket/&#123;roomId&#125;&quot;)
+@Component
+public class LiveWebSocket &#123;
+
+    private final Logger LOGGER = LoggerFactory.getLogger(LiveWebSocket.class);
+
+//    //  这里使用静态，让 service 属于类 
+//    // 这里不能直接使用 @AutoWired 注解。 需要一个set方法
+//    private static ILiveService iLiveService;
+//
+//    // 注入的时候，给类的 service 注入
+//    @Autowired
+//    public void setLiveService(ILiveService iLiveService) &#123;
+//        LiveWebSocket.iLiveService = iLiveService;
+//    &#125;
+
+    /**
+     * 静态变量，用来记录当前在线连接数。应该把它设计成线程安全的。 真实的连接数
+     */
+    private static int onLineCountTrue = 0;
+
+    /**
+     * 静态变量 ，用来记录  存在 虚拟人数
+     */
+    private static int onLineCount = 0;
+
+    /**
+     * 用来记录每个房间对应的在线人数
+     */
+    private static final Map&lt;String,Integer&gt; ROOMS_ONLINE_COUNT = new HashMap&lt;&gt;();
+
+    /**
+     * concurrent包的线程安全Set，用来存放每个客户端对应的MyWebSocket对象。若要实现服务端与单一客户端通信的话，可以使用Map来存放，其中Key可以为用户标识
+     */
+    private static final Map&lt;String, CopyOnWriteArraySet&lt;LiveWebSocket&gt;&gt; ROOMS = new HashMap&lt;&gt;();
+
+
+    /**
+     * 与某个客户端的连接会话，需要通过它来给客户端发送数据
+     */
+    private Session session;
+
+    /**
+     * 房间id
+     */
+    private String roomId;
+
+
+    /**
+     * 获取当前房间的在线人数
+     * @param roomId
+     * @return
+     */
+    public static Integer getRoomOnLineCount(Integer roomId)&#123;
+        if(roomId == null || MapUtils.isEmpty(ROOMS_ONLINE_COUNT))&#123;
+            return 0;
+        &#125;
+        Integer onLineCount = ROOMS_ONLINE_COUNT.get(String.valueOf(roomId));
+        return onLineCount == null || onLineCount &lt;= 0 ? 0 : onLineCount;
+    &#125;
+
+
+    /**
+     * 连接建立成功调用的方法
+     *
+     * @param session 可选的参数。session为与某个客户端的连接会话，需要通过它来给客户端发送数据
+     */
+    @OnOpen
+    public void onOpen(@PathParam(value = &quot;roomId&quot;) String roomId, Session session) throws Exception &#123;
+        this.session = session;
+        this.roomId = roomId;
+        CopyOnWriteArraySet&lt;LiveWebSocket&gt; friends = ROOMS.get(roomId);
+        Integer onLineCount = ROOMS_ONLINE_COUNT.get(roomId);
+        if (friends == null) &#123;
+            synchronized (ROOMS) &#123;
+                if (!ROOMS.containsKey(roomId)) &#123;
+                    friends = new CopyOnWriteArraySet&lt;&gt;();
+                    ROOMS.put(roomId, friends);
+                    addOnlineCount();
+
+                    // 记录当前房间的在线人数
+                    onLineCount = getOnlineCount();
+                    ROOMS_ONLINE_COUNT.put(roomId,onLineCount);
+                    LOGGER.info(&quot;有新的房间加入哦~ 名称为：&quot; + roomId);
+                &#125;
+            &#125;
+        &#125;else&#123;
+            addOnlineCount();
+            LOGGER.info(&quot;房间名称为：&quot; + roomId + &quot;，有一连接加入！当前在线人数为：&quot; + getOnlineCount());
+        &#125;
+        friends.add(this);
+        MessageDto messageDto = new MessageDto();
+        messageDto.setResultMessageTypeCode(&quot;10000000000000000000001&quot;);
+        updateOnLineCount(roomId);
+        messageDto.setMessage(String.valueOf(onLineCount));
+        messageDto.setRoomId(PriceUtil.getIntegerValue(roomId));
+        onMessage(getMessageJSON(messageDto),session);
+    &#125;
+
+    /**
+     * 修改当前在线人数
+     * @param roomId
+     */
+    private synchronized void updateOnLineCount(@PathParam(&quot;roomId&quot;) String roomId) &#123;
+        onLineCount = 0;//iLiveService.getLiveRoomNumCount(PriceUtil.getIntegerValue(roomId)) + getOnlineCount();
+        synchronized (ROOMS_ONLINE_COUNT)&#123;
+            ROOMS_ONLINE_COUNT.put(roomId,onLineCount);
+        &#125;
+    &#125;
+
+
+    /**
+     * 连接关闭调用的方法
+     */
+    @OnClose
+    public void onClose() &#123;
+        CopyOnWriteArraySet&lt;LiveWebSocket&gt; friends = ROOMS.get(roomId);
+        if (friends != null) &#123;
+            friends.remove(this);
+            // 在线数减1
+            subOnlineCount();
+            MessageDto messageDto = new MessageDto();
+            updateOnLineCount(roomId);
+            messageDto.setMessage(String.valueOf(onLineCount));
+            messageDto.setRoomId(PriceUtil.getIntegerValue(roomId));
+            messageDto.setResultMessageTypeCode(&quot;10000000000000000000001&quot;);
+            onMessage(getMessageJSON(messageDto),session);
+            LOGGER.info(&quot;房间名称为：&quot; + roomId + &quot;，有一连接关闭！当前在线人数为：&quot; + getOnlineCount());
+        &#125;
+
+    &#125;
+
+    /**
+     * 获取JSON对象
+     * @param messageDto
+     * @return
+     */
+    private String getMessageJSON(MessageDto messageDto) &#123;
+        return JSONObject.toJSONString(messageDto);
+    &#125;
+
+
+    /**
+     * 收到客户端消息后调用的方法
+     *
+     * @param message 客户端发送过来的消息
+     * @param session 可选的参数
+     */
+    @OnMessage
+    public void onMessage(String message, Session session) &#123;
+        CopyOnWriteArraySet&lt;LiveWebSocket&gt; friends = ROOMS.get(roomId);
+        if (friends != null) &#123;
+            try &#123;
+                for (LiveWebSocket item : friends) &#123;
+                    item.sendMessage(message);
+                &#125;
+            &#125; catch (IOException e) &#123;
+                e.printStackTrace();
+            &#125;
+        &#125;
+    &#125;
+
+    /**
+     * 这个方法与上面几个方法不一样。没有用注解，是根据自己需要添加的方法。
+     *
+     * @param message
+     * @throws IOException
+     */
+    public void sendMessage(String message) throws IOException &#123;
+        this.session.getBasicRemote().sendText(message);
+    &#125;
+
+    /**
+     * 发生错误时调用
+     *
+     * @param session
+     * @param error
+     */
+    @OnError
+    public void onError(Session session, Throwable error) &#123;
+        System.out.println(&quot;发生错误&quot;);
+        error.printStackTrace();
+    &#125;
+
+
+
+
+    private static synchronized int getOnlineCount() &#123;
+        return onLineCountTrue;
+    &#125;
+
+    private static synchronized void addOnlineCount() &#123;
+        LiveWebSocket.onLineCountTrue++;
+    &#125;
+
+    private static synchronized void subOnlineCount() &#123;
+        LiveWebSocket.onLineCountTrue = Math.max(LiveWebSocket.onLineCountTrue - 1, 0);
+    &#125;
+
+
+&#125;
+
+
+</code></pre>
+<h4 id="五、项目部署"><a href="#五、项目部署" class="headerlink" title="五、项目部署"></a>五、项目部署</h4><p>1.在项目部署到服务器上的时候，如果前端服务器我们使用 nginx 代理的话 ，会出现 404 的报错</p>
+<p>只需要在监听80,443端口的时候 截断 拦截请求名 加上 转发就可以了 。</p>
+<pre><code>location ^~ /websocket &#123;
+    proxy_pass http://127.0.0.1:端口/websocket/;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection &#39;upgrade&#39;;
+  &#125;
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="2018/12/12/Hexo-Theme-Sakura/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Hexo-Theme-Sakura</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="hojun.cn" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="small_baozi" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="hojun.cn" itemprop="url" rel="author">small_baozi</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/blog/',
+        CONTENT_URL: 'content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 Small_BaoZi<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+
+    <!-- waifu-tips.js 依赖 JQuery 库 -->
+    <script src="https://lovebaozi.github.io/blog//live2d/assets/jquery.min.js?v=3.3.1"></script>
+
+    <!-- 实现拖动效果，需引入 JQuery UI -->
+    <script src="https://lovebaozi.github.io/blog//live2d/assets/jquery-ui.min.js?v=1.12.1"></script>
+
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+
+    <script src="https://lovebaozi.github.io/blog//live2d/assets/waifu-tips.min.js?v=1.4.2"></script>
+    <script src="https://lovebaozi.github.io/blog//live2d/assets/live2d.min.js?v=1.0.5"></script>
+    <script type="text/javascript">
+        /* 可直接修改部分参数 */
+        live2d_settings['modelId'] = 1;                  // 默认模型 ID
+        live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+        live2d_settings['modelStorage'] = false;         // 不储存模型 ID
+        live2d_settings['canCloseLive2d'] = false;       // 隐藏 关闭看板娘 按钮
+        live2d_settings['canTurnToHomePage'] = false;    // 隐藏 返回首页 按钮
+        live2d_settings['waifuSize'] = '240x225';        // 看板娘大小
+        live2d_settings['waifuTipsSize'] = '200x70';    // 提示框大小
+        live2d_settings['waifuFontSize'] = '12px';       // 提示框字体
+        live2d_settings['waifuToolFont'] = '20px';       // 工具栏字体
+        live2d_settings['waifuToolLine'] = '30px';       // 工具栏行高
+        live2d_settings['waifuToolTop'] = '-80px';       // 工具栏顶部边距
+        live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+        /* 在 initModel 前添加 */
+        initModel("https://lovebaozi.github.io/blog//live2d/assets/waifu-tips.json")
+    </script>
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+      <p style="color: #666666;"><span>&copy 2021许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">Small_BaoZi-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
+        </span>
+      </p>
+        <p  style="font-family: 'Ubuntu', sans-serif; color: rgb(249,163,0);">
+           <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+        </p>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="https://lovebaozi.github.io/blog//js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="https://lovebaozi.github.io/blog//js/InsightSearch.js"></script>
+<script type="text/javascript" src="https://lovebaozi.github.io/blog//js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://lovebaozi.github.io/blog//js/zoom.min.js"></script>
+<script type="text/javascript" src="https://lovebaozi.github.io/blog//js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src="https://lovebaozi.github.io/blog//js/botui.js"></script>
+<!--浏览器搞笑标题-->
+<script src="https://lovebaozi.github.io/blog//js/titleJS.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+	<!-- 🌸飘落 -->
+	<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js"></script>
+	<!-- 雪花飘落 -->
+	<!-- <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/js/snow1.js"></script> -->
+	<!-- // 文字 -->
+	<!--<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js"></script>-->
+	<!-- // 烟花 -->
+	<!--<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>-->
+	<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@2.5/source/js/fireworks.js"></script>
+	<!-- // 星星跟随坠落 -->
+	<script src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.2/js/cursor.js"></script>
+	<!-- // 点击出现爱心 -->
+	<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+	<!-- // 连线 -->
+	<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script> -->
+	<!-- 样式二（飘动的彩带） -->
+	<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/piao.js" type="text/javascript"></script>
+	 <!--背景切换-->
+	 <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+    var now = new Date();
+    function createtime() {
+      var grt= new Date(2021,8,12,12,00,00);;//此处修改你的建站时间或者网站上线时间
+      now.setTime(now.getTime()+250);
+      days = (now - grt ) / 1000 / 60 / 60 / 24;
+      dnum = Math.floor(days);
+      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+      hnum = Math.floor(hours);
+      if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+      mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+      snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+      document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+      document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()",250);</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <!-- 实现换肤功能 -->
+  <div class="skin-menu no-select" id="mainskin" style="position: fixed">
+ <div class="theme-controls row-container">
+  <ul class="menu-list">
+   <li id="white-bg"> <i class="fa fa-television" aria-hidden="true"></i></li>
+   <li id="sakura-bg"> <i class="iconfont icon-sakura"></i></li>
+   <li id="gribs-bg"> <i class="fa fa-slack" aria-hidden="true"></i></li>
+   <li id="KAdots-bg"> <i class="iconfont icon-dots"></i></li>
+   <li id="totem-bg"> <i class="fa fa-optin-monster" aria-hidden="true"></i></li>
+   <li id="pixiv-bg"> <i class="iconfont icon-pixiv"></i></li>
+   <li id="bing-bg"> <i class="iconfont icon-bing"></i></li>
+   <li id="dark-bg"> <i class="fa fa-moon-o" aria-hidden="true"></i></li>
+  </ul>
+ </div>
+</div>
+<canvas id="night-mode-cover"></canvas>
+  <div class="changeSkin-gear no-select">
+  <div class="keys" id="setbtn">
+   <span id="open-skinMenu"> 切换主题 | SCHEME TOOL
+     <i class="iconfont icon-gear inline-block rotating"></i>
+   </span>
+  </div>
+</div>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">Small、BaoZi小屋を暖める</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/honjun" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="http://weibo.com/mashirozx?is_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/技术/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  技术
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/生活/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/资源/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随想/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/转载/">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  转载
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/tags/悦读/">
+                  <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                  书单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  番组
+                </a>
+              </li>
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/图集/">
+                  <i class="fa fa-photo" aria-hidden="true"></i>
+                  图集
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+              <li>
+                <a href="/lab/">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                  Lab
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/client/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-android faa-vertical" aria-hidden="true"></i>
+            客户端
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="2660651585"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+</body>
+</html>
